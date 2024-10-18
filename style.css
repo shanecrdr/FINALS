@@ -1,0 +1,1601 @@
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+*{
+
+  margin: 0;
+  
+  padding: 0;
+  
+  box-sizing: border-box;
+  
+  font-family: "Poppins", sans-serif ;}
+  
+  
+
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;  
+  padding: 16px; }
+  
+
+input,select,textarea,button {
+  outline: 0;}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  
+
+  
+}
+
+
+.header {
+  position: relative;
+  width: 1082px;
+  height: 50px;
+  margin: 45px 0 0 179px;
+  z-index: 2;
+  
+}
+
+.buttons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.buttons ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; 
+}
+
+.buttons ul li {
+  margin-right: 70px; 
+}
+
+.buttons ul li a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white; 
+  transition: color 0.3s ease; 
+}
+
+
+.menu {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.about {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.logo {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+.brewberry-cafe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 47px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.logo-1 {
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  top: 5px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+.vector {
+  position: relative;
+  width: 40.554px;
+  height: 36.536px;
+  margin: 2.082px 0 0 2.195px;
+  background: url(./assets/images/BEAN.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 11;
+}
+.line {
+  position: relative;
+  width: 1440px;
+  height: 3px;
+  margin: 32px 0 0 0;
+  background: url(./assets/images/LINE.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.welcome-to-brewberry {
+  position: relative;
+  width: 739px;
+  height: 69px;
+  margin: 73px 0 0 349px;
+  z-index: 12;
+}
+.welcome-to-brewberry-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  font-family: DM Serif Display, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 68.55px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 13;
+}
+.coffeee {
+  position: relative;
+  width: 579px;
+  height: 263px;
+  margin: 70px 0 0 431px;
+  background: url(./assets/images/MAIN-COFFEE.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 18;
+}
+.best-selling-product {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 937px;
+  height: 69px;
+  margin: 72px 0 0 252px;
+  color: #ffffff;
+  font-family: DM Serif Display, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 68.55px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 14;
+}
+.cta {
+  position: relative;
+  width: 350px;
+  height: 55px;
+  margin: 53px 0 0 545px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  z-index: 15;
+  border-radius: 40px;
+}
+.frame {
+  position: absolute;
+  width: 350px;
+  height: 55px;
+  top: 0;
+  left: 50%;
+  background: rgba(108, 107, 107, 0.76);
+  transform: translate(-50%, 0);
+  z-index: 16;
+  border-radius: 40px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0);
+}
+.order-now {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: absolute;
+  width: 215px;
+  height: 55px;
+  top: -4px;
+  left: calc(50% - 107px);
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 55px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 17;
+}
+.rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 960px;
+  top: 50%;
+  left: 50%;
+  background: #000000;
+  transform: translate(-50%, -50%);
+}
+
+
+/*favorite*/
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+.header {
+  position: relative;
+  width: 1082px;
+  height: 50px;
+  margin: 45px 0 0 179px;
+  z-index: 2;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  position: absolute;
+  width: 489px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translate(10.63%, 0);
+  z-index: 3;
+}
+.home {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+.favorites {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 5;
+}
+.menu {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 6;
+}
+.about {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.logo {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+.brewberry-cafe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 47px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.logo-1 {
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  top: 5px;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+.vector {
+  position: relative;
+  width: 40.554px;
+  height: 36.536px;
+  margin: 2.082px 0 0 2.195px;
+  background: url(./assets/images/BEAN01.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 11;
+}
+.line {
+  position: relative;
+  width: 1440px;
+  height: 3px;
+  margin: 32px 0 0 0;
+  background: url(./assets/images/LINE01.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+.rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 960px;
+  top: 50%;
+  left: 50%;
+  background: #000000;
+  transform: translate(-50%, -50%);
+}
+.coffeee-removebg-preview {
+  position: absolute;
+  width: 436px;
+  height: 234px;
+  top: 164px;
+  left: 874px;
+  background: url(./assets/images/COFFEE-MILK.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 22;
+}
+.cf {
+  position: absolute;
+  width: 555px;
+  height: 199px;
+  top: 171px;
+  left: 192px;
+  font-size: 0px;
+  z-index: 15;
+}
+.coffee-milk {
+  display: block;
+  position: relative;
+  height: 90px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 16;
+}
+.perfect-blend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 555px;
+  height: 104px;
+  margin: 5px 0 0 0;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 51.58px;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 17;
+}
+.tea-removebg-preview {
+  position: absolute;
+  width: 318px;
+  height: 231px;
+  top: 408px;
+  left: 290px;
+  background: url(./assets/images/LEMON.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 21;
+}
+.lt {
+  position: absolute;
+  width: 446px;
+  height: 206px;
+  top: 415px;
+  left: 815px;
+  z-index: 18;
+}
+.empty {
+  position: relative;
+  width: 425px;
+  height: 90px;
+  margin: 0 0 0 21px;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 90px;
+  text-align: right;
+  text-overflow: initial;
+  white-space: nowrap;
+  z-index: 19;
+}
+.lemon {
+  position: relative;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 128.95px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.tea {
+  position: relative;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 128.95px;
+  text-align: right;
+  text-transform: uppercase;
+}
+.savor-the-perfect {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  width: 446px;
+  height: 111px;
+  margin: 5px 0 0 0;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 51.58px;
+  text-align: right;
+  text-transform: uppercase;
+  z-index: 20;
+}
+.c {
+  position: absolute;
+  width: 707px;
+  height: 189px;
+  top: 688px;
+  left: 192px;
+  font-size: 0px;
+  z-index: 12;
+}
+.croissant-bread {
+  display: block;
+  position: relative;
+  height: 90px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 62px;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 13;
+}
+.buttery-deliciousness {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  width: 707px;
+  height: 94px;
+  margin: 5px 0 0 0;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 51.58px;
+  text-align: left;
+  text-transform: uppercase;
+  z-index: 14;
+}
+.bread-removebg-preview {
+  position: absolute;
+  width: 360px;
+  height: 204px;
+  top: 706px;
+  left: 934px;
+  background: url(./assets/images/CROISSANT-BREAD.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 23;
+}
+
+
+
+
+
+/*MENU*/
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 960px;
+  margin: 0 auto;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.header {
+  position: relative;
+  width: 1082px;
+  height: 50px;
+  margin: 45px 0 0 179px;
+  z-index: 2;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  position: absolute;
+  width: 489px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translate(10.63%, 0);
+  z-index: 3;
+}
+
+.home, .favorites, .menu, .about {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.logo {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 8;
+}
+
+.title {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 47px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+
+.vector {
+  position: relative;
+  width: 40.554px;
+  height: 36.536px;
+  margin: 2.082px 0 0 2.195px;
+  background: url(./assets/images/BEAN02.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 11;
+}
+
+.line {
+  position: relative;
+  width: 1440px;
+  height: 3px;
+  margin: 32px 0 0 0;
+  background: url(./assets/images/LINE02.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 1;
+}
+
+.menu-2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 132px;
+  height: 69px;
+  margin: 35px 0 0 654px;
+  color: #ffffff;
+  font-family: DM Serif Display, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 68.55px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 12;
+}
+
+.list {
+  position: relative;
+  width: 1250px;
+  height: 393px;
+  margin: 220px 0 0 95px;
+  z-index: 13;
+}
+
+.flex-row-d {
+  position: relative;
+  width: 1114px;
+  height: 55px;
+  margin: 0 0 0 76px;
+  z-index: 17;
+}
+
+.coffee, .non-coffee, .tea, .pastries {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 55px;
+  top: 0;
+  color: #ffffff;
+  font-family: DM Serif Display, var(--default-font-family);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 54.84px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 14;
+}
+
+/* Adjusted positions and added min-width */
+.coffee {
+  left: 0px;
+  min-width: 200px; 
+}
+
+.non-coffee {
+  left: 275px;
+  min-width: 200px; 
+}
+
+.tea {
+  left: 672px;
+  min-width: 200px; 
+}
+
+.pastries {
+  left: 943px;
+  min-width: 200px; 
+}
+
+.list-3 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  width: 290px;
+  margin: 25px 0 0 0;
+}
+   
+  
+
+
+.frame, .frame-4, .frame-5, .frame-6 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 74px;
+  position: relative;
+  width: 290px;
+  z-index: 19;
+}
+
+.coffee-menu {
+  background:black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 290px;
+  height: 315px;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.8px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 20;
+}
+
+
+ .beverage-menu, .tea-menu, .snack-menu {
+  background:black;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-shrink: 0;
+  position: relative;
+  width: 290px;
+  height: 315px;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24.8px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 20;
+}
+
+
+.rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 960px;
+  top: 50%;
+  left: 50%;
+  background: #000000;
+  transform: translate(-50%, -50%);
+}
+
+.non-coffee-7 {
+  position: absolute;
+  width: 172px;
+  height: 139px;
+  top: 257px;
+  left: 474px;
+  background: url(./assets/images/NON-COFFEE.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 30;
+}
+
+.lemon-tea {
+  position: absolute;
+  width: 192px;
+  height: 111px;
+  top: 285px;
+  left: 784px;
+  background: url(./assets/images/LEMON-TEA.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 27;
+}
+
+.bread {
+  position: absolute;
+  width: 147px;
+  height: 116px;
+  top: 303px;
+  left: 1126px;
+  background: url(./assets/images/BREAD.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 29;
+}
+
+
+.capuccino {
+  position: absolute;
+  width: 138px;
+  height: 84px;
+  top: 309px;
+  left: 180px;
+  background: url(./assets/images/CAPUCCINO.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 28;
+}
+
+
+
+/*ABOUT*/
+
+:root {
+  --default-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", Helvetica, Arial, "PingFang SC",
+    "Hiragino Sans GB", "Microsoft Yahei UI", "Microsoft Yahei",
+    "Source Han Sans CN", sans-serif;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+.main-container,
+.main-container * {
+  box-sizing: border-box;
+}
+
+input,
+select,
+textarea,
+button {
+  outline: 0;
+}
+
+.main-container {
+  position: relative;
+  width: 1440px;
+  height: 960px;
+  margin: 0 auto;
+}
+.web-about-contact-1 {
+  position: absolute;
+  width: 1440px;
+  height: 960px;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  z-index: 1;
+  overflow: hidden;
+}
+.header {
+  position: relative;
+  width: 1082px;
+  height: 50px;
+  margin: 46px 0 0 179px;
+  z-index: 5;
+}
+.buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 50px;
+  position: absolute;
+  width: 489px;
+  height: 50px;
+  top: 0;
+  left: 50%;
+  transform: translate(10.63%, 0);
+  z-index: 6;
+}
+.home {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 7;
+}
+.favorites {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 8;
+}
+.menu {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 9;
+}
+.about {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 46px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 46px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 10;
+}
+.logo {
+  position: absolute;
+  width: 347px;
+  height: 50px;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+.brewberry-cafe {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: absolute;
+  height: 50px;
+  top: 0;
+  left: 47px;
+  color: #ffffff;
+  font-family: Inknut Antiqua, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+  white-space: nowrap;
+  z-index: 12;
+}
+.logo-2 {
+  position: absolute;
+  width: 45px;
+  height: 40px;
+  top: 5px;
+  left: 0;
+  z-index: 13;
+  overflow: hidden;
+}
+.vector {
+  position: relative;
+  width: 40.554px;
+  height: 36.536px;
+  margin: 2.082px 0 0 2.195px;
+  background: url(./assets/images/BEAN03.png)
+    no-repeat center;
+  background-size: 100% 100%;
+  z-index: 14;
+}
+.line {
+  position: relative;
+  width: 1440px;
+  height: 3px;
+  margin: 31px 0 0 0;
+  background: url(./assets/images/LINE03.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 3;
+}
+.about-3 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  width: 158px;
+  height: 69px;
+  margin: 35px 0 0 641px;
+  color: #ffffff;
+  font-family: DM Serif Display, var(--default-font-family);
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 68.55px;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  z-index: 15;
+}
+.line-4 {
+  position: relative;
+  width: 1440px;
+  height: 3px;
+  margin: 583px 0 0 0;
+  background: url(./assets/images/LINE05.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 4;
+}
+.footer {
+  position: relative;
+  width: 254px;
+  height: 95px;
+  margin: 17px 0 0 593px;
+  font-size: 0px;
+  z-index: 16;
+  overflow: visible auto;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 254px;
+  height: 20px;
+  margin: 0 0 0 0;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  white-space: nowrap;
+  z-index: 18;
+}
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 192px;
+  height: 39px;
+  margin: 0 0 0 31px;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: center;
+  z-index: 17;
+}
+.icons {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 8px;
+  position: relative;
+  width: 184px;
+  margin: -4px 0 0 35px;
+  z-index: 19;
+}
+.buttons-icon {
+  flex-shrink: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 20;
+  border-radius: 4px;
+}
+.icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 8px 0 0 8px;
+  z-index: 21;
+  overflow: visible auto;
+}
+.icon-5 {
+  position: relative;
+  width: 20px;
+  height: 19.92px;
+  margin: 2.04px 0 0 2px;
+  background: url(./assets/images/FB.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 22;
+}
+.buttons-icon-6 {
+  flex-shrink: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 23;
+  border-radius: 4px;
+}
+.icon-7 {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 8px 0 0 8px;
+  z-index: 24;
+  overflow: visible auto;
+}
+.icon-8 {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  margin: 3px 0 0 3px;
+  background: url(./assets/images/IN.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 25;
+}
+.buttons-icon-9 {
+  flex-shrink: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 26;
+  border-radius: 4px;
+}
+.icon-a {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 8px 0 0 8px;
+  z-index: 27;
+  overflow: visible auto;
+}
+.icon-b {
+  position: relative;
+  width: 20px;
+  height: 14px;
+  margin: 5px 0 0 2px;
+  background: url(./assets/images/YT.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 28;
+}
+.buttons-icon-c {
+  flex-shrink: 0;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  z-index: 29;
+  border-radius: 4px;
+}
+.icon-d {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin: 8px 0 0 8px;
+  z-index: 30;
+  overflow: visible auto;
+}
+.icon-e {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: 2px 0 0 2px;
+  background: url(./assets/images/IG.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 31;
+}
+.rectangle {
+  position: absolute;
+  width: 1440px;
+  height: 960px;
+  top: 50%;
+  left: 50%;
+  background: #000000;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.brewberry-cafe-f {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 758px;
+  height: 413px;
+  top: calc(50% - 206px);
+  left: 122px;
+  color: #ffffff;
+  font-family: Libre Baskerville, var(--default-font-family);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 40px;
+  text-align: justified;
+  text-transform: capitalize;
+  z-index: 32;
+}
+
+.coffee04 {
+  position: absolute;
+  width: 358px;
+  height: 312px;
+  top: 50%;
+  left: 971px;
+  background: url(./assets/images/MAIN-COFFEE01.png)
+    no-repeat center;
+  background-size: cover;
+  transform: translate(0, -50%);
+  z-index: 33;
+}
+
+
+
+
+/* Visited link */
+ul li a:visited {
+  color: whitesmoke; 
+}
+
+/* Hover effect */
+ul li a:hover {
+  color: gray; 
+  text-decoration: underline; 
+}
+
+/* Active link styling */
+ul li a.active {
+  color: plum; 
+  font-weight: bold; 
+}
+
+
+
+
+
+/* Media query for phones (up to 600px width) HOME */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 1rem; 
+  }
+
+  .coffeee {
+    width: 100%; 
+    height: auto;
+  }
+
+  .welcome-to-brewberry-2 {
+    font-size: 20px; 
+  }
+
+  .best-selling-product, .cta {
+    text-align: center; 
+  }
+}
+
+/* Media query for tablets (601px to 1024px width) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 30px; 
+  }
+
+  .coffeee {
+    width: 80%; 
+    height: auto;
+  }
+
+  .welcome-to-brewberry-2 {
+    font-size: 24px; 
+  }
+}
+
+
+
+
+/* Media query for phones (adjust max-width as needed) FAVORITE*/
+@media only screen and (max-width: 600px) {
+  /* Styles for phone screens */
+  .main-container {
+    padding: 20px; 
+  }
+  .coffeee-removebg-preview,
+  .tea-removebg-preview,
+  .bread-removebg-preview {
+    width: 40%; 
+    height: auto;
+  }
+  .cf, .lt, .c {
+    text-align: center;
+  }
+  /*CSS styles for hamburger menu*/
+
+.mobile-div a{
+    color: #fff;
+    font-family: "Francois One", sans-serif;
+    text-align: center;
+    font-size: 2em;
+    text-decoration: none;
+    padding: 3%;
+    display: block;
+}
+
+.mobile-div a.menu-icon{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+}
+
+/* Media query for tablets (adjust min-width and max-width as needed) */
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  
+  .main-container {
+    padding: 30px; 
+  }
+}
+
+
+
+
+
+
+/* Media query for phones (up to 600px width) MENU */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 15px; 
+  }
+
+  .menu-2 {
+    font-size: 20px; 
+  }
+
+  .list {
+    flex-wrap: wrap; 
+  }
+
+  .flex-row-d {
+    justify-content: space-between; 
+  }
+
+  .coffee-menu,
+  .beverage-menu,
+  .tea-menu,
+  .snack-menu {
+    font-size: 14px; 
+  }
+
+  .capuccino,
+  .lemon-tea,
+  .bread {
+    width: 50%; 
+    height: auto;
+  }
+}
+
+/* Media query for tablets (601px to 1024px width) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 20px; 
+  }
+
+  .menu-2 {
+    font-size: 22px; 
+  }
+
+  .coffee-menu,
+  .beverage-menu,
+  .tea-menu,
+  .snack-menu {
+    font-size: 15px; 
+  }
+
+  .capuccino,
+  .lemon-tea,
+  .bread {
+    width: 10%; 
+  }
+}
+
+
+
+
+
+/* Phone Media Query (up to 600px width) 
+ABOUT */
+@media only screen and (max-width: 600px) {
+  .main-container {
+    padding: 15px; 
+  }
+
+  .about-3 {
+    font-size: 22px; 
+  }
+
+  .brewberry-cafe-f {
+    font-size: 14px; 
+  }
+
+/* Tablet Media Query (601px to 1024px width) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  .main-container {
+    padding: 20px; 
+  }
+
+  .about-3 {
+    font-size: 24px; 
+  }
+
+  .brewberry-cafe-f {
+    font-size: 16px; 
+  }
+
+}
+}
+
+
+
+
+
+
+
+
+.contact-form-container {
+  width: 100%;
+  max-width: 500px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+.form-response {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #4CAF50;
+  text-align: center;
+}
